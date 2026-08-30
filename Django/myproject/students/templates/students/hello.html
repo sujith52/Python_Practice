@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="{% static 'students/style.css' %}">
+</head>
+<body>
+    <h1>Hello Django Bro !</h1>
+    <h2>I am Sujith Kumar</h2>
+    <h2>{{name}}</h2> 
+    <h1>Age is : {{age}}</h1>
+    <h1>{{course}}</h1>
+    <img src="{% static 'students/file_handling.jpg' %}" alt="Sujith Image" class="img1">
+    <div>
+        <h1 id="grab">SUJITH</h1>
+        <button onclick="Clicked()">Change the Font</button>
+    </div>
+    <script src="{% static 'students/script.js' %}"></script>
+</body>
+</html>
